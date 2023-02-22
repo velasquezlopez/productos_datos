@@ -1,0 +1,1281 @@
+﻿role_id,role_name,assistant_id
+1,Desembolso Persona Natural,1
+2,Debitar,2
+3,Desembolso Persona Jurídica,3
+4,Generar Comprobante,4
+5,Aprobar Créditos Empleados,5
+6,Anexos Contratos Leasing,6
+7,Proceso Radicado,7
+8,Entregar Colillas Pensionados Colpensiones,9
+9,Entregar Colillas Pensionados FOPEP,8
+10,Generar Extractos,10
+11,Entregar Referencias Bancarias,11
+12,Crear Contratos Leasing,6
+13,Simular Deuda,12
+14,Descargar Insumos DANF,13
+15,Preparación Archivo Cadena,14
+16,Abonos Moneda Extranjera,15
+17,Cargue Indicadores,17
+18,Grabar Garantías,18
+33,Monitoreo,392
+34,Grabación de Comprobantes Manuales Negocios Fiduc,20
+35,Cargue Egresos Masivos Negocios Fiduciarios,21
+38,Solicitud LME,24
+39,Mantenimiento Seguro,25
+40,Indexación Empresas y Gobierno,26
+41,Operador Abonos Efectivo,27
+42,Libranzas Stuart,28
+43,Mantenimientos Prorrogas,29
+44,Marca Transacciones Fraudulentas VISA,30
+45,Procesar Novedades y Mantenimientos Cuenta Maestra,31
+46,Direccionar y Aplicar Notas Crédito,32
+47,Aprobación de Giros CI,33
+48,Embargos Masivos,34
+51,Aplicación de Abonos a Capital,35
+56,"Camb Sis 80 a 6, Cambio Nit, Direc y Apli Notas Cr",36
+57,Creación Cuentas Por Cobrar Módulo Propio,37
+58,Informe de Gastos VF,38
+59,Realizar Desembolso de Crédito Hipotecario,39
+60,Cobro de Operaciones Manuales AA,40
+61,Distribución Referidos Contact Center,41
+62,Descargar BD Bizagi,42
+63,Grabacion Planillas AFC,43
+64,Despliegue de Operaciones,50
+65,Avance Devolución Casos Crédito,51
+66,Pagos Banco Agrario,52
+70,Descarga Informes Sif,307
+71,Procesar Cargar y Enviar Boletínes,55
+72,Reasignacion y Cierre Casos Bizagi,56
+73,Realizar Copia De Seguridad,57
+74,Procesamiento Radicados,58
+75,Retiros,59
+76,Gestionar Vacantes Ext Puestos Trabajo,60
+77,Recaudo Efectivo Tradicional,68
+78,Novedades de Clientes,69
+79,Ejecución de Operaciones,50
+80,Gestión Documental y Generación TRADE,394
+81,Debitó No Entregó Fase 1,70
+82,Verificar,71
+83,Activación de Cuentas Inscritas,72
+84,Depuración de Usuarios,73
+85,Creación de Usuarios,73
+86,Subir Caso Bizagi,74
+87,Cargar Movimientos Balance,74
+88,Enviar Informe Diario,74
+89,Validar Batchs Email,74
+90,Descarga de Datos de Bizagi y Estudio de Crédito,390
+91,Experto y Diligenciamiento de Documento,45
+92,"Soporte, Captura Límites y Captura Desembolso",391
+93,Cuota de Manejo,75
+94,Validar Batches,76
+95,Ajuste Contable,77
+96,Pagarés MicroPyme,78
+97,Cruzar Batches,76
+98,Cargar Batches,76
+99,Solicitar InvBienes,79
+100,Actualizar InvBienes,79
+101,Descargar Docs InvBienes,79
+102,Organizar Info Folios EnLinea,79
+103,Descargar PDF Folios EnLinea,79
+104,Legalizar Compra Folios EnLinea,79
+105,Diligenciar F46,79
+106,Enviar Docs Preparar Demandas,79
+107,Causación de Facturas,19
+108,Actualizar Casos Falcon,80
+109,Respuestas,62
+110,Cuadre de Portafolios,81
+111,Tomar Casos Falcon,80
+112,Aclaraciones y Ajustes de Cartera,82
+113,Cargar Emails,76
+114,Enviar Informe Diario,76
+115,Transacciones FICS,84
+117,Adquisición Información SIE-Masivo,369
+118,Adquisición Información InCol,370
+119,Adquisición Información DIAN,371
+120,Adquisición Información COPNIA,372
+121,Adquisición Información RETHUS,373
+122,Adquisición Información FOPEP,374
+123,Derivados,62
+124,Absentismos,59
+125,Descarga Activaciones,86
+126,Descarga Facturas,87
+127,Envío de Notificaciones CI,88
+128,Procesar Remesas,89
+129,Eliminar SVE Inactivas,90
+130,Realizar Débitos de Consumo,91
+131,Realizar Débitos de Hipotecario,91
+132,Realizar Débitos de Cartera Castigada,91
+133,Debitos LUCY - Wolf,49
+134,Anular Reaplicar Pagos,92
+135,Realizar Impresión de Pagarés,93
+136,Radicar Novedades Bizagi,94
+137,Compensar Corresponsales Alianzas,95
+138,Preparar Insumo,96
+139,Adquisición Información CPNIEMPA,375
+140,Adquisición Información CONALPE,376
+141,Adquisición Información CPAE,85
+142,Derivados Llamados al Margen,97
+143,Pago con Aprobación,98
+144,Recordación Usuario SVP,99
+145,Generar Insumos Bizagi,65
+146,Requerimiento DIAN,100
+147,Cump - Sebra,397
+148,Cump - Pago Obligaciones e Impuestos,397
+149,Cump - PAB,397
+150,Cargue Masivo,398
+151,Descargar Órdenes de Pago,399
+152,Cump - Descarga Informes y Cierre Operaciones,101
+153,Cump - GOLF,397
+154,Preparación Insumos,101
+155,Ejecuta Flujo SAS,102
+156,Normaliza BD Pagarés,102
+157,Genera Archivo Pagarés,102
+158,Sube Archivo ASP,102
+159,Aclaraciones y Cambios de Voluntad Req. Extractos,103
+160,Aplicación de Bloqueo y Desbloqueo,104
+161,Gestor de Solicitudes,105
+162,Verificar y Radicar Operaciones,105
+163,Radicación,107
+164,Preparar Insumo,108
+165,Cobro Operaciones Manuales Agility,40
+166,Visación,109
+167,Grabacion Preaprobados,67
+168,Impresion Preaprobados Wolf,67
+169,Descargas,62
+170,Referencias Bancarias,110
+171,Validar Operaciones en Sanction Screening,111
+172,Gestión Documental,393
+173,Preparación de Insumos de Monitoreo Embargos,112
+174,Débitos a Carteras Vencidas,113
+175,Desafiliaciones Créditos Wolf,114
+176,Negocios Fiduciarios Privados,116
+177,Solicitudes MI,117
+178,Débito,118
+179,Cerrar Solicitud en Sharepoint,119
+180,Carga de ERO,120
+181,Apertura Cuentas Masivas,121
+182,Recepción FE,122
+183,Ordenar Extractos de Bancos Corresponsales,123
+184,Eliminación PC y TV,124
+185,Saldos y Movimientos Banco de Occidente,125
+204,Autogestión Posventa,126
+205,Notificación Automática,50
+206,Cambio Preaprobados,127
+207,Ejecutar Movimientos Estructurales,128
+208,Actualizar Descripciones del Cargo,129
+209,Recaudo Efectivo Transporte,27
+210,Firma Digital,130
+211,Enviar Notificaciones a Comerciales,131
+212,Cargue en Oracle,396
+213,Verificación,133
+214,Reversión Cierre Contable Anual,134
+215,Recepción,135
+216,Estudio,135
+217,Radicación Espejo 800,136
+218,Débitos a Carteras Vencidas DCC,137
+219,Gestión Solicitudes Tipo Autoriza,138
+223,Generación Insumos,139
+224,Marcación Clientes Adminfo - Devueltos,141
+225,Aplicación Débitos,142
+226,Recepción,144
+229,Reciprocidades Personas y PYMES,145
+230,Grabación y Aprobación de Tasas de Tesorería,146
+231,Matricular Clientes SVE,149
+232,Abonos ME - Forward,15
+233,Abonos ME - SWAP,15
+234,Abonos ME - Venta,15
+235,Abonos ME - Orden,15
+236,Abonos ME - Orden Venta,15
+237,Marcación Clientes Adminfo - Estructurado,141
+238,Marcación Clientes Adminfo - Tercerizado,141
+239,Carga Bizagi,151
+244,Cargue de Liquidaciones y Papeletas MEC a OYD,152
+245,Verificación Light Posdesembolso,153
+246,Crear Insumo Plantilla Aprovisionamiento,154
+247,Proceso Contable Transversal,155
+248,Monitoreo de Eventos de Fraude,156
+249,Análisis de Viabilidad Solución Inmobiliaria,157
+250,Traslados Fondos SEBRA,22
+251,Activación de Cuentas ACH,158
+252,Activación Fondos de Inversión,159
+254,Notificación,101
+255,Actualizar la Macro,28
+256,Descargar Planillas Arus,28
+257,Descargar Planillas Manuales,28
+258,Aplicación de Pagos,28
+259,Validación Planillas,28
+260,Homologación de Cuentas,169
+261,Creación de Cuentas,169
+262,Cargar Archivos,170
+263,Generación de Garantías,171
+264,Traslado Fondo - Valores,84
+265,Descargar Archivo Base - Query,174
+266,Realizar Cargue de Pedidos,175
+267,Realizar Recepción de Pedidos,175
+268,Lectura Casos SAP,115
+269,AS400 Cuentas,115
+270,Sharepoint Cuentas,115
+271,Generación Carta Cuentas,115
+272,Pendiente Ajuste Casos en SAP,115
+273,Revisión Ajustes AS400,115
+274,Cierre Casos SAP,115
+275,Log Trazabilidad Vinculación,176
+276,Orquestador,177
+277,Respuesta,177
+278,Corrección de Embargos,178
+279,Capturar y Aprobar TRM para la Sucursal,179
+281,Imprimir Imágenes en Golf,65
+282,Imprimir Imágenes en Wolf,65
+283,Cargar a Bizagi,65
+284,Grabar Pagaré en AS400,65
+285,Marca Transacciones Fraudulentas MASTER,30
+286,Marca Transacciones Fraudulentas AMEX,30
+287,Marca Transacciones Fraudulentas FRAUDCENTER,30
+288,Descargar Átomos Semanales,181
+289,Conciliación Financiera,454
+290,Validación de Informes y Cartas,182
+291,Notificación Estado del Crédito,182
+292,Radicación en SharePoint,46
+293,Validación Cliente en SAP,46
+294,Generación Cuentas de Cobro,46
+295,Validador de Reportes Legales,184
+296,SWAP Liberación Constitución Garantías,452
+297,Revelaciones Individual,44
+298,Gestor Parametrizacion Planes,204
+299,Monitoreo,204
+300,Asignación Automática de Operaciones,290
+301,Custodia de Documentos,290
+302,Aperturas,207
+303,Liquidaciones,207
+304,Cancelaciones,207
+305,Causaciones,207
+306,Generar Carta y Enviar Respuesta,208
+307,Pagos Valores Radicación,210
+308,Descargas de Insumos SISCARD,211
+311,Aplic Bloqueos y Desbloqueos TDC Empresariales,212
+312,Conciliación Contable,453
+314,Notas de Aprobación - Estudio Crédito,213
+315,Notas de Aprobación - Flujo Alcance,213
+316,Notas de Aprobación - Preaprobados,213
+317,Cobro Operaciones,214
+318,Verificar Visados,105
+328,Aplicar la Operación,105
+336,Reversión Operación,105
+337,Información del Diario Electrónico,105
+338,Monitoreo Bizagi Cartera,105
+339,Realizar Grabación Garantías,18
+340,Reasignación y Cierre de Casos,18
+341,Extracción de Información,206
+342,Monitoreo de Correo,206
+343,Grabar Retiros de Empleados,216
+344,Generación Paz y Salvo,217
+345,Aplicación Contracargos,218
+347,Descargar Reporte Transaccional de PSE Compras,219
+348,Descargar Reporte Transaccional de PSE Recargas,220
+349,Compensar Corresponsales en Robustos,222
+350,Compensar Corresponsales Bancarios Críticos,221
+351,Eliminación PC y TV,223
+352,Orquestador,224
+353,Procesamiento,224
+354,Visación Sobregiro,225
+355,Radicación en Gestor Pagos Fiduciarios,101
+356,Preparación Información,5
+357,Procesamiento de Casos,5
+358,Generación de Respuesta,5
+359,Generar Archivo LME,5
+360,Preinscripción de Prendas SUFI,223
+361,Validación LOTUS y ORACLE,226
+362,Extracción IQBot,226
+363,Calificación Cartera y Diligenciar MAF,226
+364,Adquisición Información SI,85
+365,Realizar Reclamaciones,227
+366,Procesar Insumos,228
+367,Asignación Casos Bizagi,228
+368,Generar Correo Encuesta,228
+369,Generar Reporte,228
+370,Consulta Participantes,58
+371,Consulta Básica,58
+372,Consulta Complementaria,58
+373,Cierre de Caso,58
+374,Recaudos Mercado de Capitales,17
+375,Generacion_Pagares_NI,229
+376,Carga Masiva de Incidentes,233
+378,Descargar Vistas,258
+379,Generación de Extractos y Movimientos,259
+380,Conciliación Descargar Insumos,155
+381,Conciliación Procesar IQBot,155
+382,Insumo Bizagi,151
+383,Grabación As400,151
+384,Impresión Wolf,151
+385,Generación Cartas,151
+392,Consultar Información Cliente,261
+393,Solicitar Tarjeta Débito Duplicada,262
+394,Solictud Límites en Bizagi,114
+395,Monitorear Archivos,184
+396,Generar EEFF,263
+399,Generar Referencias Bancarias,265
+400,Pagador,264
+401,Generación Reportes BO,266
+402,Orquestador,267
+403,Descargar Casos Falcon,80
+405,Cambio Día Pago Crédito Consumo,268
+406,Generación Reportes Decreto 2878,269
+407,Generación Reportes FICs y APTs,270
+408,Generación Reportes Negociación,271
+409,Generación Reportes Posición Propia Valores Bancolombia,272
+410,Gestión de Correos,273
+411,Monitoreo de Bizagi,273
+412,Cierre de Casos Bizagi,273
+413,Aprobar Transacciones Movimiento Diario,274
+414,Cambio de Cuota Regular Cartera de Consumo,276
+415,Ejecución Actividades SARiC,275
+417,Negocios Fiduciarios Públicos,116
+418,Realizar Reversión de Débitos Consumo,91
+419,Preparación de Insumo,91
+420,Cargue Tasas LIBOR,17
+421,Restauración de Archivos ITO,279
+422,Descargar FotoMultas en Mercurio,280
+423,Descargar FotoMultas en SIMIT,280
+424,Comparar Mercurio VS SIMIT y Enviar Notificación,280
+425,Actualizar Estados NIT’s y Resoluciones,280
+426,Indexar Expedientes en Mercurio,280
+427,Adjuntar Correos en Mercurio,280
+428,Monitoreo del Correo Electrónico,281
+429,Transferencias Cliente Afectado Bancolombia,281
+430,Desafiliación de Débitos Automáticos y Bloqueo de Tarjetas de Crédito,114
+431,Reenviar Correos,280
+432,Contabilidad de Garantías,452
+433,Descargar Registros,282
+434,Validaciones AS400,282
+435,Radicar Certificar Solicitud,282
+436,Procesar Insumo,283
+437,Modificación a Contrato de Canon de Arrendamiento,283
+438,Generar Reporte de Contratos Procesados,283
+439,Descarga de Informes Riesgo Mercado DyV,284
+441,Reportería Insumos,285
+442,Proyección Derivados,286
+443,Informe Diario Activos Líquidos ML,287
+444,Informe Diario Activos Líquidos ME,288
+445,Base Posiciones Asset Management,291
+446,Cálculo Exposición Crediticia Banistmo,292
+447,Crédito Hipotecario Modificar Día Pago,293
+448,Ordenar Extractos Manuales,294
+449,Tiempos de Conexión,295
+450,Descargar Informe de Retiros ,296
+451,Grabar Liquidación de Aprendices,297
+452,Orquestador,298
+453,Ordenar Extractos Manuales,299
+454,Gestionar Aperturas Cuentas,300
+455,Cálculo Exposición Crediticia Banagricola,301
+456,Ejecución,302
+457,Sobregiros,303
+458,Monitorear solicitudes,304
+459,Procesar solicitudes,304
+460,Enviar correos y cerrar solicitudes,304
+461,Abonos Cuenta Única y Abonos a Cuentas Múltiples (Transporte),68
+462,Revelaciones Consolidados,44
+463,Revelaciones Individuales Compartidos,44
+464,Revelaciones Consolidado Compartido,44
+465,Detiene Timer Bizagi GO,305
+466,Descargas FNG,18
+467,Descargar Informes Sif Panama,307
+468,Descargar Informes Eureka,307
+469,Descargar Informes OYD,307
+470,Descargar Informes Encuenta,307
+471,Descargar Informes Pershing,307
+472,Descargar Informes Intranet,307
+473,Descargar Informes Infovalmer,307
+474,Ejecutar Macro,307
+475,Transferencia de Archivos,306
+476,Aplicar Pagos Caja Colombia,309
+477,Crédito Hipotecario Recalcular Cuota,310
+478,Consultar Solicitudes,282
+479,Validar Ajustes AS400,282
+480,Seleccionar Radicados,282
+481,Cerrar Radicados,282
+482,Validar Radicados y Transacciones,311
+483,Reversar y Marcar Transacciones,311
+484,Generar Archivos,311
+485,Gestionar SAP,311
+486,Proceso Generar TRM,155
+487,Proceso Descarga Insumos Internacional,155
+488,Proceso Extracción IQBots,155
+489,Proceso Consolidar Valores Internacional,155
+490,Proceso Descarga Insumos Nacionales,155
+491,Proceso Contable Transversal Nacional,155
+492,Proceso Depurar Rutas,155
+493,Monitorear Solicitudes,312
+494,Consultar Solicitudes,312
+495,Autenticación OMNIPAY,312
+496,Grabar en ONMIPAY,312
+497,Generar Reporte,312
+498,Modelo Agregador OMNIPAY,312
+499,Medir y Analizar Riesgo de Liquidez DyV Valores,313
+500,Gestionar Transacciones Rechazadas Recaudos,314
+501,Construcción de Cruce Contable,315
+502,Main Cargar Archivos,298
+503,Main Pagos Masivos,298
+504,Main Descarga OyD,298
+505,Main Descarga Apolo,298
+506,Main Cargue Archivos Apolo,298
+507,Main Informe Archivos Apolo,298
+508,Actualizar TRM,316
+509,Validar Atribuciones,316
+510,Clasificar,317
+511,Intraday,317
+512,Spot,317
+513,Forward,317
+514,Archivo Plano,317
+515,Cheque,317
+516,Cierre Contable,317
+517,Extracción Estados VSTS,318
+518,Consultar y Validar Abonos Pendientes,319
+519,Aplicar Abonos en Línea,319
+520,Verificar Abonos en Línea,319
+521,Gestionar Radicado en SAP,319
+522,Aplicar Abonos por Lectura Manual,319
+523,Ingresar Intenciones,316
+524,Retiros,320
+525,Conciliar Cuentas Cajeros,321
+526,Gestionar Requerimientos Cajeros Multifuncionales,322
+527,Cierre Masivo,323
+528,Descarga Archivo Bizagi,324
+529,Buscar información del Ticket,324
+530,Aplicar Mantenimiento,324
+531,Cierre de Caso Bizagi,324
+532,Extraer Insumo,325
+533,Gestionar Prórroga,325
+534,Validar Información de Prórrogas Solicitadas,326
+535,Generar Registro Formulario Bancoldex,327
+536,Crear Usuario Bancoldex,328
+537,Actualizar la Base de Datos,329
+538,Consulta CHIP Página Secretaría de Hacienda de Bogotá,329
+539,Validaciones para Enviar Notificación Correspondiente al Cliente,329
+540,Reenvío Notificaciones Pendiente del Día Anterior,329
+541,Archivo Plano,330
+542,Clasificador,330
+543,Comisiones Especiales,330
+544,Forex Forward,330
+545,Traslado Efectivo,330
+546,Traslado,330
+547,Cheque,330
+548,Forward,330
+549,Spot,330
+550,Descarga del Caso de Bizagi,331
+551,Anexar Documentos al Contrato en Mercurio,331
+552,Cerrar el Caso en Bizagi,331
+553,Descarga Bizagi,332
+554,Inactivar Tarjeta Virtual,332
+555,Apertura Cuentas ALM,332
+556,Informar Estado Solicitud Bizagi,18
+557,Get Client Info,333
+558,Aplicar Novedad en el Aplicativo SAP CRM,333
+559,Aplicar Novedad en el Aplicativo AS400,333
+560,Ejecución Macro Hash,334
+561,Recepción de Solicitudes,335
+562,Grabación de pagaré en AS400,335
+563,Impresión de Pagaré,335
+564,Cierre/Cargue de Solicitudes Gestonadas en Bizagi,335
+565,Verificar Transacciones a Procesar,336
+566,Anulación de Transacciones,336
+567,Descargar Información,337
+568,Verificar Información,337
+569,Ingresar Prorroga Finagro,337
+570,Consultar e Insertar Información,338
+571,Relacionar Producto Garantía AS400,338
+572,Cerrar en Bizagi,338
+573,Conciliación de Temporales Tarjeta,339
+574,Cargue Insumos OYD APOLO,340
+575,Cargue Recibos Caja Renta Liquidez OYD,340
+576,Cargar Tasas en Finacle,341
+577,Monitorear Correo Electrónico,342
+578,Extraer Información de Anexos para Procesar,342
+579,Descarga y Ejecución de Proceso,343
+580,Creación Archivo Pagos,344
+581,Cambio Estado PAEF,345
+582,Descargar Insumos Mesa de Dinero,346
+583,Adjuntar Expediente en Mercurio,329
+584,Asignación Incidentes,347
+585,Preparar Insumos,348
+586,Validar Solicitudes,348
+587,Generar Comando,348
+588,Otorgar Accesos,348
+589,Cerrar Solicitudes,348
+590,Enviar información a Kofax,349
+591,Actualizar Backup,350
+592,Identificar Clientes,350
+593,Restablecer Comisión,350
+594,Monitorear Controles Sox,351
+606,Descargar Insumos Bizagi,352
+607,Descargar Kofax,352
+608,Cargue Terceros,352
+609,Radicación,352
+610,Cierre Bizagi,352
+611,Indexar Oracle,352
+612,Impresión de Pagaré,354
+613,Grabar Reestructuraciones,355
+614,Consolidar Cartera Crítica,356
+615,Confirmar Desembolso,358
+616,Medios de Pago,359
+617,Control Contable,360
+618,Recaudos Mercado de Capitales,362
+619,Aprobar Solicitud Token,363
+620,Gestión de Insumo,364
+621,Descargar Reporte de FNG,364
+622,Reporte Validación Manual,364
+623,Validar FNG,364
+624,Validar LME,364
+625,Instrumentar Solicitud Desembolsos con EUC,364
+626,Get Input Data,365
+627,Finacle CDT RET,365
+628,Finacle Hipotecario RET,365
+629,Intermedia ABS,365
+630,Intermedia RET,365
+631,Vision Plus ABS,365
+632,Vision Plus RET,365
+633,SAP Solman ABS,365
+634,BIZAGI GO RET,365
+635,BIZAGI 11 RET,365
+636,SAP Producción RET,365
+637,SAP Portal RET,365
+638,WSE RET,365
+639,SWIFT ABS,365
+640,BIZAGI AC RET,365
+641,PORFIN ABS,365
+642,PORFIN RET,365
+643,BO RET,365
+644,APM RET,365
+645,Create Result File,365
+646,SAP Solman RET,365
+647,Descargar Insumos,366
+648,Eliminar Usuario,366
+649,Crear Usuario,366
+650,Modificar Usuario,366
+651,Repisar Usuario,366
+652,Cerrar Caso,366
+653,Monitorear Carpetas,367
+654,Monitorear Correos,367
+655,Realizar Informe del Día,367
+657,Reporte Analítica,364
+658,Cierre,368
+659,Descarga,368
+660,Consultar Información,377
+661,Aplicar Comisión,377
+662,Aplicar Prórroga,377
+663,Modificar Factura,377
+664,Reversar Interéses de Mora,377
+665,Aprobar Solicitudes,377
+666,Aplicar Reintegro,377
+667,Calcular Interéses,377
+668,Generar Insumos,378
+669,Descargar Productos,378
+670,Procesar Sebra,378
+671,Procesar PAB,378
+672,Generar y Enviar Notificación de Pagos,378
+674,"Consolidar, Verificar y Asignar Solicitud",379
+675,Modelo Intenciones,316
+676,Actualizar SharePoint,316
+677,Actualizar Murex,316
+678,Medios de Pago,380
+687,Cruzar Abonos,382
+688,Actualizar Base Datos Consulta,382
+689,Cerrar Casos Bizagi,382
+690,Notificar Estados FNG,384
+691,Clasificar Legalizaciones,383
+692,Legalizaciones,383
+693,Descargar certificado Bizagi,384
+694,Validar información Carvajal,384
+695,Obtener Desembolsos,384
+696,Identificar clientes y transferencias,385
+697,Consultar detalle de las comisiones a cobrar,385
+698,Consultar saldo,385
+699,Realizar cobro comision,385
+700,Aprobar contabilidad,385
+701,Valida Aprobación de comisiones,385
+702,Consultar Saldo,386
+703,Información del Crédito y datos del Cliente,386
+704,Grabación Tasas,386
+705,Realizar Abono,386
+706,Aprobar Contabilidades,386
+707,Medios de Pago,387
+708,Insertar cuentas y valores en Risk,349
+709,Recuperaciones de pagos,315
+710,Envío y generación de informe y Backup,315
+711,Realizar desbloqueo automatico,388
+712,Descargar información de Prosegur,389
+713,Descargar información de Brinks,389
+714,Descargar información de Atlas,389
+715,Descargar información de Transbank,389
+716,Descargar avances de Brinks,389
+717,Impresión de documentos en Golf Sif Branch,395
+718,Cerrar caso en Bizagi,395
+719,Gestión de insumo,401
+720,Reporte Analitica,401
+721,Reporte validación manual,401
+722,Radicar solicitudes de FNG,401
+723,Descargar reporte de FNG,401
+724,Validar FNG,401
+725,Validar LME,401
+726,Consulta de Tasa (Tir),401
+727,Instrumentar solicitud de consolidación de pasivos,401
+728,Cerrar caso en Bizagi,401
+729,Procesar Perfil Transaccional ECS,400
+730,Consultar Cuentas,386
+731,Monitor Anulacion Pagos,204
+732,Monitor Reaplicacion Pagos,204
+733,Gestor Anulacion Pagos,204
+734,Monitor Parametrización Planes,204
+735,Gestor Reaplicacion Pagos,204
+736,Respuesta Anulacion y Reaplicacion Pagos,204
+737,Respuesta Parametrizacion Planes,204
+738,Creación Archivo Pagos PAP,344
+739,Rreporte analitica insumo de FNG,401
+740,Ordenar y Cargar Insumo,49
+741,Predictivo Reintentos SUFI,49
+742,Consultar y Depurar DB Access,49
+743,Consulta Centrales,67
+744,Preparar insumos,402
+745,Enviar correo electrónico al cliente,402
+746,Monitorear el fallo del envío del correo,402
+747,Descargar documentos de BizagiBEG,403
+748,Publicar documentos en Oracle,403
+749,Transferencia de Bolsillos,91
+750,Obtener registros/Clasificador,404
+751,Procesar Operación por Referencia,404
+752,Procesar Operación por convenio,404
+753,Solicitar TDC Nuevas Único,405
+754,Administrar BD Preaprobados,405
+755,Solicitar TDC Nuevas Cortes,405
+756,Validar Informes de Solicitar TDC Nuevas_Cortes,405
+757,Validar Rechazos,405
+758,Realizar Redistribuciones,405
+759,Cargar Masivamente,405
+760,Realizar Contingencia,405
+761,Cargue TRM NACIONAL,406
+762,Cargue TRM VISION,407
+763,Cargue Ind MX,408
+764,Retiros diferente vivienda,409
+765,Extraer las transacciones para marcarlas como fraude,410
+766,Marcar las transacciones como fraude en el aplicativo Monitor Plus,410
+767,Eliminar Usuarios VSTS,411
+768,Descargar SG básico,389
+769,Organizar y preparar información,389
+771,Cargar Archivos Base de Datos,170
+772,Consultar Cedulas,170
+773,Indexar Documento,170
+774,Capture Dashboard Teams,412
+775,BIZAGI AC RET,365
+777,Autenticar Cliente,413
+778,Descarga de informes,414
+779,Desafiliaciones WOLF,24
+780,Desafiliacion Aliados,24
+781,Solicitud LME Bigazi,24
+782,Lectura del insumo,415
+783,Asignación de Operaciones,415
+784,Ingresar Subastas Ordenes Web,416
+785,Descarga del Reporting Service,417
+786,Descarga Insumo por Correo Electrónico,417
+787,Clasificador de Pagos,417
+788,Pagos en AS400 Nacional,418
+789,Pagos en Sebra,418
+790,Aprobación pagos Sebra,418
+791,Pagos Wolf,418
+792,Priorización y Toma de Radicado,419
+793,Gestionar Cierre de Radicado,419
+794,Generar PDF y Subir Bizagi para impuestos,419
+795,Descargar Informe de Sebra,419
+796,Realizar Constitución de Fondos,419
+797,Grabar comprobantes Finacle,66
+798,Publicar entregables,420
+799,Liberar Saldos,421
+800,Consultar solicitudes en Bizagi y descargar información,422
+801,Realizar validaciones de la información del cliente en AS400,422
+802,Validar Geolocalización del cliente,422
+803,Consumir modelo de TOM,422
+804,Desbloquear clave principal del cliente,422
+805,Cerrar casos en Bizagi,422
+806,Diligención Formulario Emulación,423
+807,Aprobación Emulación,423
+808,Cruce Wolf,423
+809,Consultar requerimientos,424
+810,Consultar detalle requerimientos,424
+811,Descargar solicitudes para gestionar y realizar validaciones de la información,425
+812,Aplicar novedades en SAP CRM,425
+813,Cerrar casos en Biztrack,425
+814,Cambiar estado AS400,170
+815,Distribuir radicado,170
+816,Identificar IP Máquina RPA,427
+817, Identificar IP Máquina no registrada en NAZAR,427
+818,Descargar Casos GMF,426
+819,Actualizar Información Radicado GMF,426
+820,Validar CIFIN,426
+821,Validación AS400 GMF,426
+822,Creación de Cartas GMF,426
+823,Solicitar Abono Cliente en JAZZ,426
+824,Cerrar Radicado SAP GMF,426
+825,Envío Correspondencia Física,426
+826,Reporte Efectividad,426
+827,NoExtraidos,206
+828,Tomar Insumo de cartera,428
+829,Aplicar formulario de balanza,428
+830,Generar formatos de cliente (Planos),428
+831,Dispersión de pagos únicos,429
+832,Orquestador DIAN,430
+833,Colocacion DIAN,430
+834,Preparacion DIAN,430
+835,Presentacion DIAN,430
+836,Recepción de solitudes SIIFGRAFICO,431
+837,Extraer información de la solicitud,431
+838,Procesar solicitudes SUFIPRO,431
+839,Cierre de solicitudes gestionadas SIIFGRAFICO,431
+840,Preparar Insumo,432
+841,Generar Nota Débito y Nota Crédito,432
+842,Actualizar estado Asp,432
+843,OBTENER SOLICITUDES,433
+844,VALIDAR SOLICITUDES,433
+845,GESTIONAR RECURSOS COMPARTIDOS,433
+846,Envia_Reporte_a_UIAF,434
+847,Monitorear y Asignar Casos,435
+848,Validar Información del Proveedor,435
+849,Gestionar Vinculación del Proveedor Creado,435
+850,Gestionar Vinculación del Proveedor No creado,435
+851,Gestionar Vinculación del Proveedor Cargar Oracle,435
+852,Radicar Vinculación del Proveedor,435
+853,Dispersión de pagos F755,436
+854,Dispersión de pagos de cartera,436
+855,Pagos en Wolf,436
+856,Generación insumo,437
+857,Gestión insumo,437
+858,Aprobación de lotes,437
+859,Indexación Oracle,438
+860,Preparar insumos,439
+861,Inscribir Convenios en AS400,439
+862,Inscribir Convenios en Finacle Recaudos,439
+863,Finalizar solicitudes en el SharePoint,439
+864,CARGAR FACTURAS PARA PROCESAMIENTO,440
+865,DESCARGAR FACTURAS EPM,440
+866,EXTRAER INFORMACIÓN DE FACTURAS,440
+867,REALIZAR CENTRALIZACIÓN DE CONSUMOS,440
+868,REALIZAR BATCH PARA PAGO DE FACTURAS (Cuenta Padre EPM),440
+869,MONITOREAR PAGOS,440
+870,Descargar Casos,441
+871,Actualizar Información Radicado,441
+872,Validación AS400,441
+873,Validar LZ,441
+874,Creación de Cartas,441
+875,Cerrar Radicado SAP,441
+876,Envío Correspondencia Física,441
+877,Validar trx 7 meses,441
+878,Radicar Revisoría Fiscal,442
+879,Notificación Caso Finalizado,442
+880,Monitorear solicitudes,443
+881,Validar información de transferencias y pagos,443
+882,Abonar transferencias y pagos,443
+883,Gestionar lectura manual,443
+884,Gestionar radicado en SAP,443
+891,Obtener operaciones Salesforce,445
+892,Obtener operaciones de Servicios Trade,445
+893,Obtener operaciones de Bizagi,445
+894,Obtener operaciones de Finacle,445
+895,Aplicar comisión,445
+896,Insumo GAT,415
+897,Cargue Web,415
+898,Cargue Planos de seguridad,415
+899,Insumo Sap,415
+900,Cierre Sap,415
+901,Preparar insumos,446
+902,Asignar Incidentes,446
+903,Descargar campos de información básica del cliente de SAP CRM,425
+904,Verificar sincronización y Aplicar novedades en AS400,425
+905,Radicacion_Bizagi,447
+906,Marcar transacciones,443
+907,Verificar cancelación TC,443
+908,Generar archivos LC y Centrales,443
+909,Generar archivo SMS,443
+910,Verificar información cuenta,443
+911,Cancelar cuenta,443
+912,Solicitar cancelación TC,443
+913,Verificar lista de control ,443
+914,Obtener Operaciones Salesforce Soporte CI,448
+915,Orquestador de solicitudes,449
+916,Extracción de información,449
+917,Bloqueo y desbloqueo de cuentas,449
+918,Cupos y topes,449
+919,Cuentas Embargadas,449
+920,Cierre del caso en bizagi,449
+921,Habilitar o reservar pagos del día,449
+922,Habilitar oficinas para transacciones con FICS,449
+923,Prórroga fidurenta,449
+924,Bloqueo masivo de clientes fallecidos,449
+925,Visualizar PA en SVE,449
+926,Visualizar PA grupo vulcano,449
+927,Validar radicados y transacciones,411
+928,Atender Novedades TP Client,450
+929,Validar_Operacion_Valores,451
+930,Módulo Parámetros y ejecución EUC,455
+931,Módulo Procesamiento,455
+932,Revisar Solicitudes por correo Outlook,456
+933,Extraer información de PDF,456
+934,Escalar tercer nivel ,424
+935,Consultar información general ,424
+936,Consultar rutas compartidas,424
+937,Solucionar requerimiento,424
+938,Montar lectura Jazz,424
+939,Consultar documentos del crédito,424
+940,Consultar histórico de pagos,424
+941,Monitoreo Bizagi FDF y descarga de archivos en carpeta local,457
+942,Realizar validación de los archivos descargados de Bizagi FDF,457
+943,Diligenciar información en BizagiGo y generar documento de inscripción,457
+944,"Modificar archivo de afiliación, adjuntarlo en FDF y cerrar caso",457
+945,Tomar archivo de la ruta compartida y modificar el archivo,458
+946,Ingresar a RAM y diligenciar campos,458
+947,Identificar casos de adición de franquicias en carpeta compartida,458
+948,Realizar la adición de franquicia en RAM,458
+949,Validación Información recibida por correo y AS400,459
+950,SIMQF Obelix - Wait,460
+951,SIMQF Obelix - Anulados,461
+952,SIMQF Obelix - Asincronas,462
+953,SIMQF Obelix - Consultas Bizagi,463
+954,SIMQF Obelix - Abiertos,464
+955,SIMQF Obelix - Cerrados,465
+956,SIMQF Obelix - Participante,466
+957,Requerimiento Suc Virtual - PAC - Cajero,467
+958,Requerimiento Pagos,467
+959,Requerimiento Viva Voz,467
+960,Requerimiento Suc Física,467
+961,Inserción Base Requerimientos,467
+962,Revisar Solicitudes por correo Outlook,468
+963,Extraer información de PDF,468
+964,SIMQF Obelix - Reasignar Casos,469
+965,SIMQF Obelix - Recuperar Urls,470
+966,SIMQF Obelix - Avance Casos,471
+967,SIMQF Obelix - Requisitos Modalidad,472
+968,Obelix - PAYPRO,473
+969,Organizar insumos,474
+970,Descargar cartas Bizagi,474
+971,Enviar notificaciones,474
+972,Consultar Requerimiento,475
+973,Clasificar Requerimiento,475
+974,Solucionar Requerimiento,475
+975,Escalar Requerimiento DCC por SAP,475
+976,Verificar Contactos Errados,475
+977,Escalar Requerimiento DCC por Sharepoint,475
+978,Rta Escalar Requerimiento DCC por Sharepoint,475
+979,Realizar Supresión,475
+980,Escalar Requerimiento Clientes,475
+981,Rta Escalar Requerimiento Clientes,475
+982,Búsqueda de requerimientos. ,476
+983,Detallar requerimientos ,476
+984,Aclarar y soportar transacciones. ,476
+985,Realizar consulta del comprobante del pago al beneficiario (Recaudador),476
+986,Pagar convenio errado,476
+987,Aclaración y Cancelación débito Automático,476
+988,Realización no aplicación del débito Automático,476
+989,Construir carta respuesta a los clientes.,476
+990,Cerrar el requerimiento,476
+991,Realizar proceso de asignación,476
+992,Descargar archivos en la ruta,476
+993,Validar comprobante del pago (Pagador).,476
+994,Generar Balances SAP,477
+995,Partidas conciliatorias,479
+996,Soportes de Conciliación,479
+997,Soportes de conciliación mensual -Migración,479
+998,Soportes de conciliación mensual -Terceros y PP,479
+999,Consultar Centralizadores,478
+1000,Validar Solicitudes en USD y USM,478
+1001,Gestionar Absentismos y Eliminaciones en SAP HCM Individuales,478
+1002,Gestionar Ingresos y Reingresos en SAP HCM Individuales,478
+1003,Gestionar Absentismos y Eliminaciones en SAP HCM Masivas,478
+1004,Gestionar Ingresos y Reingresos en SAP HCM Masivas,478
+1005,Cerrar Solicitudes en USD y USM,478
+1006,Diligenciar pagarés,480
+1007,Ejecución del lote de solicitudes de bizagi,481
+1008,Recepción de Alertas,482
+1009,Procesar Alertas,482
+1010,Preparar Insumos,483
+1011,Cargar información en ASP,483
+1012,Realizar y actualizar informe diario,483
+1013,Log de procesamiento,483
+1014,Gestión de insumo,484
+1015,Reporte Validación manual,484
+1016,Radicar solicitudes de FNG,484
+1017,Descargar reporte de FNG,484
+1018,Validar FNG,484
+1019,Descargar requerimientos portal Data,485
+1020,Capturar mail cliente,485
+1021,Radicar masivamente los requimientos en SAP,485
+1022,Ejecutar y crear la consulta en SAP,485
+1023,Exportar información SAP,485
+1024,Extraer Datos LZ,485
+1025,Escalar Requerimiento,485
+1026,Realizar Construccion de cartas,485
+1027,Solucion y cierre de requerimientos,485
+1028,MonitorarYProcesarRespuestaValoresCustodia,486
+1029,Consolidar1002,486
+1030,ConsolidarGenerarEnviar1001,486
+1031,ProcesarCierreSolicitudesBizagi,486
+1032,ProcesarSolicitudesBizagi,486
+1033,EnviarSolicitudDeValoresCustodia,486
+1034,GenerarInformesCartasCredito,486
+1035,ProcesarInformesCartasCredito,486
+1036,ProcesarQueryToken1001,486
+1037,ProcesarQuerySaldosCartera1001,486
+1038,ProcesarQueryDeudaIndirecta1001,486
+1039,ProcesarQueryTarjetasCrédito1001,486
+1040,ProcesarQueryGarantías1001,486
+1041,ProcesarQuerySaldosDepósitos1001,486
+1042,ProcesarQueryFirmas1001,486
+1043,ProcesarQuerySaldosDepósitos1002,486
+1044,ProcesarQuerySaldosCartera1002,486
+1045,ProcesarQueryRendimientos1002,486
+1046,ProcesarToken1001,486
+1047,ProcesarCartera1001,486
+1048,ProcesarDeudaIndirecta1001,486
+1049,ProcesarTarjetasCrédito1001,486
+1050,ProcesarGarantías1001,486
+1051,ProcesarDepósitos1001,486
+1052,ProcesarFirmas1001,486
+1053,ProcesarDepósitos1002,486
+1054,ProcesarCartera1002,486
+1055,ProcesarRendimientos1002,486
+1056,ProcesarCarteraHipotecaria,486
+1057,Generar excel y enviar información,487
+1058,Monitorear Terceros,488
+1059,Monitorear PRM,489
+1060,Consultar alertas,489
+1061,Consultar información en Nacional,489
+1062,Consultar saldo actual de la cuenta,489
+1063,Procesar decisión con TOM,489
+1064,Documentar alerta en PRM,489
+1065,Enviar a investigación,489
+1066,Generar Pagarés N&I AS400,229
+1067,Imprimir Pagarés en Wolf,229
+1068,Cerrar Casos Bizagi,229
+1069,Descargar solicitudes Bizagi y Validar Plantilla,229
+1070,Reporte LOTUS,490
+1071,Consulta tasas y verificación de insumos,490
+1072,Consulta Experian,490
+1073,Consulta AS400,490
+1074,Diligenciar simulador,490
+1075,Validar LME,484
+1076,Instrumentar solicitudes de reestructuracion y modificaciones,484
+1077,Diligenciar formato en dolares y cerrar caso en BIZAGI,484
+1078,SpotTelex,330
+1079,AS400,491
+1080,FONVIVIENDA,491
+1081,FINACLE,491
+1082,CIFIN,491
+1083,BIZAGI,491
+1084,DESCARGA y PRIORIZA,491
+1085,Verificar certificaciones,492
+1086,Monitorear solicitudes de crédito,493
+1087,Extraer información de documentos,493
+1088,Radicar solicitudes Créditos en Bizagi Go,493
+1089,Descarga de Requerimientos en SAP  ,494
+1090,Identificar resultado de investigación de casos abonados,494
+1091,Clasificar requerimientos,494
+1092,Aplicar validaciones de cuenta en Nacional ,494
+1093,Aplicar Validaciones Especificas (ATM monitor),494
+1094,Realizar abono en AS400,494
+1095,Realizar cruce en wolf,494
+1096,Validar el abono en la cuenta del cliente,494
+1097,Notificar abono al cliente,494
+1098,Validar estados de la cuenta para reversar abonos temporales,494
+1099,Reversar abono temporal de transacciones exitosas,494
+1100,Cerrar solicitudes en SAP,494
+1101,Informe Efectividad,494
+1102,Informe Diarios,479
+1103,Informe Mensuales,479
+1104,Preparación de Insumos,495
+1105,Cargar información en ASP,495
+1106,Validar respuesta de la carga,495
+1107,Notificar rechazos en Putty,495
+1108,Identificar Casos de la Base de Datos,497
+1109,Validar Créditos de Bizagi,497
+1110,Validar Información de Desembolso,497
+1111,Construir la estructura MEPE56 y transmitir información,498
+1112,Gestión de correos colomex,499
+1113,Cerrar solicitudes en bizagi,499
+1114,Capturar casos,496
+1115,Completar y asignar casos,496
+1116,Revisar vision plus,496
+1117,Revisar ITC,496
+1118,Revisar GEO,496
+1119,Cerrar Casos,496
+1120,Obtener Información del proceso,500
+1121,Identificar solicitudes a desembargar,500
+1122,Aplicar reglas de negocio,500
+1123,Desembargar cuentas de ahorro y corriente,500
+1124,Validar reintegro de recursos,500
+1125,Seleccionar y asignar prioridad a los Créditos Hipotecarios de Verificación Post de Desembolso.,501
+1126,Notificar Desembolsos,501
+1127,Marcación en “CIFIN”,501
+1128,Actualizar “Bizagi”,501
+1129,Generar Requerimientos,502
+1130,APLICAR NOVEDADES,503
+1133,Envío Automático de ROS,434
+1134,Preparar Insumos,507
+1135,Descargar y validar solicitudes ampliación de plazos,507
+1136,Cargar y validar solicitudes en Angular,507
+1137,Realizar informe diario y actualizar cifras,507
+1138,Recepcion de Solicitudes Bizagi,508
+1139,Grabacion de Pagares AS400,508
+1140,Impresion de Pagares Wolf,508
+1141,Cierre de Solicitudes Bizagi,508
+1142,Actualizar Base de datos,508
+1143,Depurar Base de datos,508
+1144,Publicar PDF,501
+1145,Extracción y notificación,509
+1146,Desembolso de Giro,509
+1147,Plan de Pagos,509
+1148,Validar Casos de Bizagi recibidos por la sucursal telefonica,510
+1149,Validar Casos de Bizagi recibidos por el asesor,510
+1150,Validar Reglas de Negocio,510
+1151,Cerrar casos en Bizagi,510
+1152,Validar Casos de Salesforce realizados por el cliente,510
+1153,Cerrar casos en Salesforce,510
+1154,Seleccionar Caso,511
+1155,Apertura Credito,511
+1156,Verificación,511
+1157,Impresión de documentos en Golf Sifbranch ,512
+1158,Cerrar caso en Bizagi,512
+1161,Afiliar Comercios AMEX - EAB,514
+1162,Descargar_Informe,515
+1163,Descargar_Planillas,515
+1164,Consolidar_Planillas,515
+1165,Cerrar_Bizagis_Exitosos,515
+1166,Monitorear Correo de Bizagi,516
+1167,Validar información del caso y complementarla,516
+1168,Validar abono en el banco,516
+1169,Liberar canje y bloquear el % parametrizado en SIF,516
+1170,Cerrar o rechazar caso en Bizagi,516
+1171,Desbloquear el % parametrizado de todas las solicitudes,516
+1172,Pagos Leasing Habitacional,517
+1173,Aplicar novedades de cupo TDC,518
+1175,Preparar insumos,513
+1176,Modificar Convenios en AS400,513
+1177,Modificar Convenios en Finacle Recaudos,513
+1178,Finalizar solicitudes en el SharePoint,513
+1179,Desembolso de Capital de Trabajo,509
+1180,Validar documentos desembolso,520
+1181,Monitorear y Validar Solicitudes Bizagi,521
+1182,Procesar Bizagi Pagos,521
+1183,Procesar Bizagi Recaudos,521
+1184,Eliminar Prenotificacion Pagos AS400,521
+1185,Cerra Bizagi Pagos,521
+1186,Eliminar Debito Recaudos AS400,521
+1187,Eliminar Debito Finacle Recaudos,521
+1188,Cerrar Bizagi Recaudos,521
+1189,Cerrar_bizagi,522
+1190,Etapa 1- Módulo Revisión Bases Gerenciamiento,523
+1191,Etapa 2- Módulo Entrega de Clientes,523
+1192,Etapa 2- Recepción y Contacto de Cliente,523
+1193,Etapa 1- Módulo de Postulación de Clientes,523
+1194,Preparar ejecución del día,524
+1195,Descarga de insumos para preestudio,524
+1196,Extraer información de motor,524
+1197,Validar cliente en Fraudes,524
+1198,Extraer información de AS400,524
+1199,Extraer información en Oracle,524
+1200,Generar Log Transaccional,524
+1201,Generar Log Transaccional,524
+1202,Procesar memorandos Bizagi,525
+1203,Responder Correo notificacion de memorando,525
+1204,Modificar PowerPoint plantilla respuesta a cliente,525
+1205,Modificar Excel plantilla Causación cliente,525
+1206,Insumo Cruces Partidas Conciliatorias,479
+1207,Cruces Partidas Conciliatorias,479
+1208,Herramienta Gestion,479
+1209,Reglas Especiales Sebra Fiduciaria y P.Propia,479
+1210,Reglas Generales,479
+1211,Depura Base De Datos,479
+1212,Simetrik Actualizar Base De Datos,479
+1213,Descarga insumo para grabación de operaciones Tidis,526
+1214,Cargar insumos a base de datos,526
+1215,Grabar operaciones Tidis de impuestos,526
+1216,Grabar operaciones Tidis de cambio de depositante,526
+1217,Grabar operaciones Tidis de Cambio de Titular,526
+1218,Descargar adjuntos y aplicar validaciones documentales,526
+1219,Gestión casos en Bizagi flujo de flujos,526
+1220,Monitorear correo,527
+1221,Consultar alertas,527
+1222,Consultar información en Nacional,527
+1223,Consultar saldo actual de la cuenta,527
+1224,Procesar decisión con TOM,527
+1225,Enviar a investigación,527
+1226,Descargar archivo medios de pago,528
+1227,Procesar condonaciones,529
+1228,Grabación comprobantes Finacle no retrofecha,530
+1229,Aprobación operaciones TIDIS de impuesto,531
+1230,Aprobación operaciones TIDIS de impuesto cambio de depositante,531
+1231,Aprobación operaciones TIDIS de impuesto cambio de titular,531
+1232,Generar constancias,531
+1233,Gestión casos en bizagi flujo de flujos,531
+1239,Consultar Requerimiento,533
+1240,Consultar Detalle requerimiento,533
+1241,Consultar Info del cliente y transacción,533
+1242,Validar Conciliación,533
+1243,Escalar requerimiento otras redes,533
+1244,Verificar respuesta otras redes,533
+1245,Validar Abono,533
+1246,Solucionar Requerimiento,533
+1247,Realizar Bloqueos y Desbloqueos,534
+1248,DownloadCards,498
+1249,ExtractInfoIqBot,498
+1250,ValidateInformation,498
+1251,AS400Nacional,498
+1252,AS400Medellin,498
+1253,GenerarMEPE,498
+1254,TransferToProvider,498
+1255,SendToProvider,498
+1256,FindAnswer,498
+1257,CloseSharepoint,498
+1258,DescargaInformes,366
+1259,Ejecución planilla preestudio,535
+1260,Obtener Información de Solicitudes,536
+1261,Consultar Coincidencia de Cuenta,536
+1262,Realizar Registro de las Solicitudes en ASP,536
+1263,Validar Estado de las Solicitudes en ASP,536
+1264,Actualizar Solicitud en Salesforce,536
+1265,Monitorear Bizagi FDF,537
+1266,Validar estructura del archivo ,537
+1267,Dejar archivo en ruta sftp,537
+1268,Validar respuesta de masivian,537
+1269,Cierre de casos en bizagi,537
+1270,Consolidar informes,537
+1271,Capturar casos,539
+1272,Completar y asignar casos,539
+1273,Revisar estado de la tarjeta,539
+1274,Obtener ID RSA,539
+1275,Revisar IP,539
+1276,Revisar ITC,539
+1277,Cerrar casos,539
+1278,Obtener Nuevas Cuentas de Campaña e Insumos de Transacciones,540
+1279,Validar y Monitorear Cuentas de Campañas,540
+1280,Generación Reporte Periódico Alarmas,540
+1281,Ejecutar Query y Obtener Datos del Proceso,542
+1282,Aplicar Reglas de Negocio,542
+1283,Direccionar y Aplicar Nota Crédito en Delfin,542
+1284,Reportar al CAC,542
+1285,Reportar Notas en Proceso Jurídico,542
+1286,Reportar Notas en Sistema 80,542
+1287,Reportar Notas en Sistema 9,542
+1288,Gestion de insumos,541
+1289,Identificar casos manuales,541
+1290,Extraer datos de As400 transacciones clientes,541
+1291,Extraccion datos As400 nacional compensaccion comercio,541
+1292,Realizar cartas,541
+1294,Realiza descargar reporte Gestión día a día Bizagi Go,543
+1295,Gestionar insumos y realizar asignación operaciones desembolso hipotecario,543
+1299,Validar clientes en listas de control,545
+1300,Monitorear casos pendientes en BD,546
+1301,Gestionar transacción en Wolf,546
+1302,Construir archivo insumo SIF,546
+1303,Cargar información a SIF Web,546
+1304,Reprocesamiento de escenarios no exitosos,546
+1305,Ingresar insumos en ASP de Asset Management,547
+1306,Pre-carga de información,548
+1307,Realizar Apertura en Finacle,548
+1308,Cobro de comisiones,548
+1309,Descarga mensaje y carta de la comisión,548
+1310,Orquestador de insumos,549
+1311,Obtener informacion SAP CRM,549
+1312,Actualizar informacion registros,549
+1313,Validar tipologia apertura cuenta,549
+1314,Validar tipologia inconvenientes claves,549
+1315,Validar tipologia inconvenientes transacciones,549
+1316,Escalar caso a tercer nivel,549
+1317,Realizar cartas,549
+1318,Seguimiento a escalamientos,549
+1319,Monitoreo y Envío de Incapacidades,550
+1320,Descarga Insumo Sigesa,550
+1321,Descarga Insumo Sap,550
+1322,Descarga Query de Retiros en Sap,550
+1323,Descargar Insumo EPS Sura,550
+1324,Descarga de Incapacidades Sura,550
+1325,Descargar Insumo EPS Sanitas,550
+1326,Descarga de Incapacidades Sanitas ,550
+1327,Descargar Insumo Nueva EPS,550
+1328,Descarga de Incapacidades Nueva EPS,550
+1329,Descargar Insumo Salud Total,550
+1330,Descarga de Incapacidade Salud Total,550
+1331,Descargar Insumos Aliansalud y Enviar Informe,550
+1332,Descargar Insumos Compensar y Enviar Informe,550
+1333,Envio de Incapacidades,550
+1334,Centralización partidas crédito,551
+1335,Grabacion Transacciones Agiles,551
+1336,Obtener Solicitudes para Procesar,552
+1337,Consultar Vinculación y Gerenciamiento de Clientes,552
+1338,Identificar Solicitudes a Notificar,552
+1339,Generar Archivo por Embargos y Desembargos,552
+1340,Enviar Notificación a Gerentes,552
+1341,Identificar Correo del Ente Legal,552
+1342,Generar Carta Respuesta,552
+1343,Enviar Cartas Respuesta,552
+1344,Actualizar SharePoint Base de datos del asistente con casos de cartas enviadas,552
+1345,Orquestador de Solicitudes de Embargos y Desembargos,553
+1346,Aplicar Desembargo de Cuentas AFC,553
+1347,Aplicar Desembargo de CDT,553
+1348,Consultar Información de Embargos,553
+1349,Aplicar Embargo de Cuentas AFC esta actividad es en MICI 44310,553
+1350,Aplicar Embargo de CDT (esta actividad es en MICI 44310),553
+1351,"Validar Día y Hora de Ejecución, Acceso a Ruta Compartida e Ingreso a Base de Datos",554
+1352,Proceso de Asignación Por Analista,554
+1353, Asignación en SAPLOGON Desde archivo texto,554
+1354,Alerta de Asignación Masiva,554
+1355,Descargar y generar insumo radicados y atascos,555
+1356,Consumir respuesta LZ y clasificar información,555
+1357,Procesar radicados,555
+1358,"Notificar respuesta, cierre y generar informes",555
+1359,Consolidar y validar solicitudes Matriculas SVE,556
+1360,Gestion de Insumo,557
+1361,Realizar apertura en finacle,557
+1362,Verificar y Finalizar el desembolso,557
+1363,Avance de Casos Bizagi Go,558
+1364,Construir Informe para la BEG,559
+1365,Tesoreria - Reportes Inc,560
+1366,Orquestador de Insumos,561
+1367,Obtener Información SAP CRM,561
+1368,Creación Certificado PARADOC,561
+1369,Aclaración Certificado Banco,561
+1370,Aclaración Reporte DIAN,561
+1371,Generación Carta,561
+1372,Solución en SAP,561
+1373,Escalamiento de los Radicados,561
+1374,ConsultarRequerimientos,562
+1375,ClasificarRequerimientos,562
+1376,ValidarTrxParadoc,562
+1377,ValidarTrxAS400,562
+1378,ValidarPagosDebitoRechazo,562
+1379,ValidarTrxComisionACH,562
+1380,EnviarInformacionLz,562
+1381,DescargarInformacionLz,562
+1382,CreacionDeCartas,562
+1383,SolicitarSoportes,562
+1384,MonitorearRespuestaCliente,562
+1385,AsignarResponsable,562
+1386,EnviarCorrespondeciaFisica,562
+1387,CerrarRadicados,562
+1388,Apertura de Parametros de Fecha,563
+1389,Gestionar insumos de devoluciones del área Carvajal,564
+1390,Informar y Gestionar Solicitudes Devueltas a Aliado Konecta,564
+1391,Continuar o Cancelar Solicitudes Devueltas Indicadas por el Aliado Konecta en BizagiGo,564
+1392,Radicar FDF Bizagi,456
+1393,Guardar información de Radicado en BD,456
+1394,Enviar Notificación Correo Electrónico,456
+1395,Montaje  y publicación  de las noticias corporativas,565
+1396,Radicar FDF Bizagi,468
+1397,Realizar Carta de Referencias Bancaria a través de Macro ,459
+1398,Encriptar en PDF y enviar al cliente,459
+1399,Eliminar Usuarios SVE,566
+1401,Generar insumo,568
+1402,Generar detalle de documentos,568
+1403,Validar reglas de negocio,568
+1404,Guardar en DB SVE Recaudo,43
+1405,Descargar Planilla AFC,43
+1406,Validar Archivos,43
+1407,Convertir Archivos,43
+1408,Cargar Plantillas,43
+1409,Envío de informe,43
+1410,InsertarInformacionBaseDeDatos,569
+1411,IngresarAMedellinYGestionarInformacion,569
