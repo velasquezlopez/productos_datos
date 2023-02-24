@@ -99,14 +99,17 @@ class ExtractTransformLoad():
         if not existe_archivo:
             try:
                 df.to_csv(path + 'salidas/bd_consolidada.csv')
+                print('Archivo guardado exitosamente')
             except:
                 os.mkdir(path + 'salidas')
                 df.to_csv(path + 'salidas/bd_consolidada.csv')
+                print('Archivo guardado exitosamente')
 
         else: 
             try:
                 os.remove(path + 'salidas/bd_consolidada.csv')
                 df.to_csv(path + 'salidas/bd_consolidada.csv')
+                print('Archivo guardado exitosamente')
             except:
                 print('No es posible guardar el archivo')
 
