@@ -1,116 +1,140 @@
-import pandas as pd
 import os
+import json
+import pandas as pd
+import numpy as np
+import datetime as dt
 
+class ETL:
+    def __init__(self):
+        self.path = self.get_folder_path()
+        self.params = self.read_params('params.json')
 
-class ExtractTransformLoad():
+    def get_folder_path(self):
+        # Get folder path to read input files
+        folder_path = os.path.dirname(os.path.abspath(__file__))
+        folder_path = os.path.join(folder_path + '/')
+        return folder_path
 
-    def ETL(self):
-    ###FASE DE EXTRACCION
-        path = self.get_folderPath()
-        df_cases = pd.read_csv(os.path.join(path + 'data/cases.csv'), sep = ',')
-        df_runners = pd.read_csv(os.path.join(path + 'data/runners.csv'), sep = ',')
-        df_roles = pd.read_csv(os.path.join(path + 'data/roles.csv'), sep = ',')
-        df_assistants = pd.read_csv(os.path.join(path + 'data/assistants.csv'), sep = ',')
-        df_ftes = pd.read_csv(os.path.join(path + 'data/historical_ftes.csv'), sep = ',')
-        df_joined = self.unir_df(df_cases,df_runners,df_assistants,df_roles,df_ftes)
-        df_final = self.preProcesamiento(df_joined)
-        self.cargar(df_final)
-    
-    def get_folderPath(self):
-    #Obtener la ruta de la carpeta para leer archivos
-        self.path = os.path.dirname(os.path.abspath(__file__))
-        self.path = os.path.join(self.path + '/')
-        return self.path 
+    def read_params(self, file):
+        # Read execution parameters
+        with open(file) as json_params:
+            params = json.load(json_params)
+        return params
+
+    def process(self):
+        # Extract phase
+        df_cases = pd.read_csv(os.path.join(self.path + 'data/cases.csv'), sep = ',', encoding = 'latin_1', quoting = 3)
+
+        df_runners = pd.read_csv(os.path.join(self.path + 'data/runners.csv'), sep = ',')
+        df_roles = pd.read_csv(os.path.join(self.path + 'data/roles.csv'), sep = ',')
+        df_assistants = pd.read_csv(os.path.join(self.path + 'data/assistants.csv'), sep = ',')
         
+        df_ftes = pd.read_csv(os.path.join(self.path + 'data/historical_ftes.csv'), sep = ',')
         
-    def unir_df(self,cases,runners,assistants,roles,ftes):
-        support_groups = ['Implementacion de Servicios Estrategicos CedEx Soporte',
-                    'Operaciones CedEx Implementacion de Servicios Estrategicos CedEx Soporte Enterdev',
-                    'Operaciones CedEx Soporte en Campo UNISYS']
-
-        resolved_states = ['Resuelto', 'Cerrado']
-
-        cases = (cases.query("Grupo in @support_groups")
-                        .query("Estado in @resolved_states")
-                        .query("Resumen.str.startswith('RPA')")
-                        .query("Sintoma.str.startswith('ACIS')"))
-
-        cases['assistant_nickname'] = cases['Resumen'].str.split(' - ').str[0].str.upper()
-        cases['Sintoma'] = cases['Sintoma'].str.replace('?', '', regex = False)
-        cases['symptom_category'] = cases['Sintoma'].str.split(' - ').str[1]
-
-        runners = runners.dropna(subset = ['machine'])
-        runners['machine'] = runners['machine'].str.upper()
-        runners = pd.merge(runners[['role_id', 'machine']], roles[['role_id', 'assistant_id']], on = 'role_id', how = 'inner')
-        runners = runners.groupby(by = 'assistant_id').agg({'machine': 'nunique'}).reset_index()
-
-
-        assistants = (assistants.query("assistant_type == 'RPA'")
-                                    .query("assistant_state == 'Activo'"))
-
-        assistants['assistant_nickname'] = assistants['assistant_nickname'].str.upper()
-        assistants = pd.merge(assistants[['assistant_id', 'assistant_nickname', 'assistant_bia']], runners, on = 'assistant_id', how = 'inner')
-
-        ftes = (ftes.query("anio == 2022")
-                        .query("mes in (10, 11, 12)"))
-
-        ftes = ftes.groupby(by = 'id_componente').agg({'ftes': 'mean'}).reset_index()
-
-        assistants = pd.merge(assistants, ftes, left_on = 'assistant_id', right_on = 'id_componente', how = 'inner')
-
-        fin = pd.merge(cases, assistants[['assistant_nickname', 'assistant_bia', 'machine', 'ftes']], on = 'assistant_nickname', how = 'inner')
-
-        return fin 
+        # Transform phase
+        df_ftes = self.rename_columns(df_ftes, 'ftes_columns')
+        
+        df_runners = self.get_number_machines(df_runners, df_roles)
+        
+        df_cases = self.adjust_urgency(df_cases)
+        
+        df_cases = self.join_df(df_cases, df_assistants, df_runners, df_ftes)
+        
+        df_cases = self.compute_urgencies_percentage(df_cases)
+        df_cases = self.compute_sla_compliance(df_cases)
+        
+        # Load phase
+        self.export_df(df_cases)
     
-    def preProcesamiento(self, df):
-        df['Urgencia'].unique()
+    def rename_columns(self, df, dict_name):
+        # Rename DF columns based on a dictionary
+        dict = self.params.get(dict_name)
+        df = df.rename(columns = dict)
+        return df
 
-        df1 = pd.get_dummies(df, columns = ['Urgencia'], drop_first = False)
+    def get_number_machines(self, df_runners, df_roles):
+        # Get the number of machines by assistant
+        df_runners = df_runners.dropna(subset = ['machine']).copy()
+        df_runners['machine'] = df_runners['machine'].str.upper()
+        df_runners = pd.merge(df_runners, df_roles, on = 'role_id', how = 'inner')
+        df_runners = df_runners.groupby(by = 'assistant_id').agg({'machine': 'nunique'}).reset_index()
+        return df_runners
 
-        df_perc = df1.groupby('assistant_nickname').agg(
-            perc_inmediata = (
-                "Urgencia_Inmediata", 
-                lambda x: round(sum(x)/len(x),3)),
-            perc_puede_esperar = (
-                "Urgencia_Puede Esperar", 
-                lambda x: round(sum(x)/len(x),3)),
-            perc_media = (
-                "Urgencia_Media", 
-                lambda x: round(sum(x)/len(x),3)),
-            perc_alta= (
-                "Urgencia_Alta", 
-                lambda x: round(sum(x)/len(x),3)),
-            perc_no_urg = (
-                "Urgencia_No es urgente", 
-                lambda x: round(sum(x)/len(x),3))
+    def adjust_urgency(self, df_cases):
+        # Converts the urgency of some cases
+        urgency_dict = self.params.get('urgency_values')
+        df_cases['urgency'] = df_cases['urgency'].replace(urgency_dict)
+        return df_cases
+
+    def join_df(self, df_cases, df_assistants, df_runners, df_ftes):
+        # Join and process all DFs
+        support_groups = self.params.get('support_groups')
+        resolved_states = self.params.get('resolved_states')
+
+        df_cases = (df_cases.query("group in @support_groups")
+                            .query("state in @resolved_states")
+                            .query("summary.str.startswith('RPA')")
+                            .query("symptom.str.startswith('ACIS')"))
+        df_cases['assistant_nickname'] = df_cases['summary'].str.split(' - ').str[0].str.upper()
+        df_cases['symptom'] = df_cases['symptom'].str.replace('?', '', regex = False)
+        df_cases['symptom_category'] = df_cases['symptom'].str.split(' - ').str[1]
+
+        df_assistants = (df_assistants.query("assistant_type == 'RPA'")
+                                        .query("assistant_state == 'Activo'"))
+        df_assistants['assistant_nickname'] = df_assistants['assistant_nickname'].str.upper()
+        df_assistants = pd.merge(df_assistants, df_runners, on = 'assistant_id', how = 'inner')
+
+        df_ftes = (df_ftes.query("year == 2022")
+                            .query("month in (10, 11, 12)"))
+        df_ftes = df_ftes.groupby(by = 'assistant_id').agg({'ftes': 'mean'}).reset_index()
+
+        df_assistants = pd.merge(df_assistants, df_ftes, on = 'assistant_id', how = 'inner')
+        df_cases = pd.merge(df_cases, df_assistants, on = 'assistant_nickname', how = 'inner')
+        return df_cases 
+    
+    def compute_urgencies_percentage(self, df_cases):
+        # Compute the percentage of cases by urgency for each assistant
+        df_urgency_perc = pd.get_dummies(df_cases[['assistant_nickname', 'urgency']], columns = ['urgency'], drop_first = False)
+
+        df_urgency_perc = df_urgency_perc.groupby(by = 'assistant_nickname').agg(
+            lambda x: round(sum(x)/len(x), 3)
         ).reset_index()
-
-        pd.DataFrame(df_perc)
-
-        df_final = pd.merge(df1,df_perc,on='assistant_nickname', how='left')
-
-        return df_final
+        
+        df_cases = pd.merge(df_cases, df_urgency_perc, on = 'assistant_nickname', how = 'inner')
+        return df_cases
     
-    def cargar(self, df):
-
-        ### FASE DE CARGA
-        path = self.get_folderPath()
-        existe_archivo = os.path.isfile(path + 'salidas/bd_consolidada.csv')
-        if not existe_archivo:
+    def compute_sla_compliance(self, df_cases):
+        # Compute the compliance for each case based on the SLA by urgency level
+        sla_urgency = self.params.get('sla_urgency')
+        df_cases['sla_days'] = df_cases['urgency'].map(sla_urgency)
+        df_cases['business_days'] = df_cases.apply(self.get_business_days, axis = 1)
+        df_cases['compliance'] = np.where(df_cases['business_days'] <= df_cases['sla_days'], 1, 0)
+        return df_cases
+    
+    def get_business_days(self, df_cases):
+        # Get the number of business days needed to resolve each case
+        open_date = dt.datetime.strptime(str(df_cases['open_date']), '%Y-%m-%d').date()
+        resolved_date = dt.datetime.strptime(str(df_cases['resolved_date']), '%Y-%m-%d').date()
+        df_holidays = pd.read_csv(os.path.join(self.path + 'data/holidays.csv'), sep = ',')
+        df_holidays['date'] = pd.to_datetime(df_holidays['date'], format = '%d/%m/%Y').dt.date
+        holidays_list = df_holidays['date'].tolist()
+        business_days = np.busday_count(open_date, resolved_date, holidays = holidays_list)
+        return business_days
+    
+    def export_df(self, df):
+        # Load the processed cases DF to output folder
+        if os.path.isfile(self.path + 'output/cases_processed.csv'):
             try:
-                df.to_csv(path + 'salidas/bd_consolidada.csv')
-                print('Archivo guardado exitosamente')
+                os.remove(self.path + 'output/cases_processed.csv')
+                df.to_csv(self.path + 'output/cases_processed.csv', index = False, encoding = 'latin_1', quoting = 3)
+                print('File saved successfully')
             except:
-                os.mkdir(path + 'salidas')
-                df.to_csv(path + 'salidas/bd_consolidada.csv')
-                print('Archivo guardado exitosamente')
-
+                print('Cannot save file')
         else: 
             try:
-                os.remove(path + 'salidas/bd_consolidada.csv')
-                df.to_csv(path + 'salidas/bd_consolidada.csv')
-                print('Archivo guardado exitosamente')
+                df.to_csv(self.path + 'output/cases_processed.csv', index = False, encoding = 'latin_1', quoting = 3)
+                print('File saved successfully')
             except:
-                print('No es posible guardar el archivo')
-
-        
+                os.mkdir(self.path + 'output')
+                df.to_csv(self.path + 'output/cases_processed.csv', index = False, encoding = 'latin_1', quoting = 3)
+                print('File saved successfully')
