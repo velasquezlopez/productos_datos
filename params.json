@@ -1,6 +1,55 @@
 {
-    "in_file": "./src/salidas/bd_consolidada.csv",
-    "out_file": "./datalake/landing/bd_consolidada_"
+    "default_input_date": "31/12/2022",
+    "minimum_input_date": "01/01/2022",
+    "maximum_input_date": "31/12/2022",
 
+    "weeks_backwards": 1,
 
+    "cases_columns": {
+        "Nro Caso": "case_id",
+        "Estado": "state",
+        "Asignatario": "assignee",
+        "Grupo": "group",
+        "Urgencia": "urgency",
+        "Sintoma": "symptom",
+        "Resumen": "summary",
+        "Fecha Apertura": "open_date",
+        "Fecha Resuelto": "resolved_date"
+    },
+
+    "in_progress_percentage": 0.10,
+    "open_percentage": 0.01,
+
+    "ftes_columns": {
+        "id_componente": "assistant_id",
+        "anio": "year",
+        "mes": "month"
+    },
+
+    "urgency_values": {
+        "Alta": "Inmediata",
+        "No es urgente": "Puede Esperar"
+    },
+
+    "support_groups": [
+        "Implementacion de Servicios Estrategicos CedEx Soporte",
+        "Operaciones CedEx Implementacion de Servicios Estrategicos CedEx Soporte Enterdev",
+        "Operaciones CedEx Soporte en Campo UNISYS"
+    ],
+
+    "resolved_states": [
+        "Resuelto",
+        "Cerrado"
+    ],
+
+    "sla_urgency": {
+        "Inmediata": 4,
+        "Media": 6,
+        "Puede Esperar": 8
+    },
+
+    "datalake_path": "datalake/landing",
+
+    "in_file": "./src/output/cases_processed.csv",
+    "out_file": "./datalake/landing/cases_processed_"
 }
